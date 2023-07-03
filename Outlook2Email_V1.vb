@@ -47,7 +47,7 @@ Sub ExportSelectedEmailsToExcel()
         
         For Each attachment In olItem.Attachments
             If attachment.Type = olByValue Then ' Only save attachments that are not linked
-                If attachment.FileName Like "*.xls*" Or attachment.FileName Like "*.msg" Then
+                If attachment.FileName Like "*.xls*" Or attachment.FileName Like "*.xlsx" Or attachment.FileName Like "*.xlsb" Or attachment.FileName Like "*.msg" Then
                     ' Save attachment as embedded object in Excel
                     attachment.SaveAsFile "C:\Attachments\" & attachment.FileName ' Change the path as per your requirement
                     xlWorksheet.Cells(attachmentRow, attachmentColumn).Value = attachment.FileName
