@@ -85,18 +85,18 @@ Sub ExportSelectedEmailsToExcel()
     Set olApp = Nothing
 End Sub
 
-To use this code:
+' To use this code:
 
-1. Open Outlook and press "Alt+F11" to open the VBA editor.
-2. In the VBA editor, go to "ThisOutlookSession" under "Project - VBAProject" on the left side.
-3. Copy and paste the above code into the module.
-4. Modify the file paths in the code to match your desired location for saving attachments and the Excel file.
-5. Close the VBA editor.
-6. Select the emails you want to export in Outlook.
-7. Go to the "Developer" tab in the Outlook ribbon (if you don't see the "Developer" tab, you may need to enable it in Outlook options).
-8. Click on the "Macros" button in the "Code" group.
-9. Select the "ExportSelectedEmailsToExcel" macro and click "Run".
+' 1. Open Outlook and press "Alt+F11" to open the VBA editor.
+' 2. In the VBA editor, go to "ThisOutlookSession" under "Project - VBAProject" on the left side.
+' 3. Copy and paste the above code into the module.
+' 4. Modify the file paths in the code to match your desired location for saving attachments and the Excel file.
+' 5. Close the VBA editor.
+' 6. Select the emails you want to export in Outlook.
+' 7. Go to the "Developer" tab in the Outlook ribbon (if you don't see the "Developer" tab, you may need to enable it in Outlook options).
+' 8. Click on the "Macros" button in the "Code" group.
+' 9. Select the "ExportSelectedEmailsToExcel" macro and click "Run".
 
-The code will extract the required data from the selected emails, save attachments as embedded objects or hyperlinks in the Excel file, and save the mail body as an HTML file with the sender's name. The data will be saved in rows, with the appropriate headers in the columns.
+' The code will extract the required data from the selected emails, save attachments as embedded objects or hyperlinks in the Excel file, and save the mail body as an HTML file with the sender's name. The data will be saved in rows, with the appropriate headers in the columns.
 
-Please note that you need to have the necessary permissions to access and save attachments in Outlook and Excel, and you may need to adjust the file paths in the code to match your specific environment.
+' Please note that you need to have the necessary permissions to access and save attachments in Outlook and Excel, and you may need to adjust the file paths in the code to match your specific environment.
