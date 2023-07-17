@@ -63,9 +63,9 @@ Sub ExportSelectedEmailsToExcel()
             End If
         Next attachment
         
-        ' Save mail body as HTML file
-        olItem.SaveAs "C:\Attachments\" & olItem.SenderName & ".html", olHTML ' Change the path as per your requirement
-        xlWorksheet.Cells(rowIndex, 5).Value = olItem.SenderName & ".html"
+        ' Save mail body as .MSG file
+        olItem.SaveAs "C:\Attachments\" & olItem.SenderName & ".MSG", olMSG ' Change the path as per your requirement
+        xlWorksheet.Cells(rowIndex, 5).Value = olItem.SenderName & ".MSG"
         
         rowIndex = attachmentRow ' Update the row index for the next email
         Set olItem = Nothing ' Release memory
@@ -97,6 +97,6 @@ End Sub
 ' 8. Click on the "Macros" button in the "Code" group.
 ' 9. Select the "ExportSelectedEmailsToExcel" macro and click "Run".
 
-' The code will extract the required data from the selected emails, save attachments as embedded objects or hyperlinks in the Excel file, and save the mail body as an HTML file with the sender's name. The data will be saved in rows, with the appropriate headers in the columns.
+' The code will extract the required data from the selected emails, save attachments as embedded objects or hyperlinks in the Excel file, and save the mail body as an MSG file with the sender's name. The data will be saved in rows, with the appropriate headers in the columns.
 
 ' Please note that you need to have the necessary permissions to access and save attachments in Outlook and Excel, and you may need to adjust the file paths in the code to match your specific environment.
